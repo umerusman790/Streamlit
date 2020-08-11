@@ -4,7 +4,7 @@ Created on Sat Aug  8 00:19:31 2020
 
 @author: ComingWar
 """
-import pandas as pd 
+
 
 import streamlit as st
 
@@ -30,10 +30,7 @@ data_set_name = st.sidebar.selectbox('Choose Dataset' ,
 
 classifier_name = st.sidebar.selectbox('Choose Algorithm' ,
                                        ('Knn','Svm','Random Forest'))
-data = pd.read_csv('dataconverted.csv' ,
-                           index_col='Unnamed: 0')
-st.write('# Dataset')
-st.write(data.head()) 
+
 
 
 
